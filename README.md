@@ -1,23 +1,23 @@
 <h1 align="center">Hi 👋, I'm Shivendra Singh</h1>
 <h3 align="center">A passionate aspiring full stack developer from India.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=abhay7083&label=Profile%20views&color=0e75b6&style=flat" alt="abhay7083" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=shivendra7083&label=Profile%20views&color=0e75b6&style=flat" alt="shivendra7083" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abhay7083" alt="abhay7083" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shivendra7083" alt="shivendra7083" /></a> </p>
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/geekydev_?logo=twitter&style=for-the-badge" alt="geekydev_" /></a> </p>
 
-<!-- - 🔭 I’m currently working on [Placemantra](https://github.com/abhay7083/placemantra) -->
+<!-- - 🔭 I’m currently working on [Placemantra](https://github.com/shivendra7083/placemantra) -->
 
 - 🌱 I’m currently learning **JAVA**
 
-<!-- - 👯 I’m looking to collaborate on [Shoe Billing Software](https://github.com/abhay7083/SHOE-SALES-MANAGEMENT-SOFTWARE) -->
+<!-- - 👯 I’m looking to collaborate on [Shoe Billing Software](https://github.com/shivendra7083/SHOE-SALES-MANAGEMENT-SOFTWARE) -->
 
-<!-- - 🤝 I’m looking for help with [Spotify Clone](https://github.com/abhay7083/Spotify-Clone) -->
+<!-- - 🤝 I’m looking for help with [Spotify Clone](https://github.com/shivendra7083/Spotify-Clone) -->
 
-- 👨‍💻 All of my projects are available at [https://github.com/abhay7083](https://github.com/Abhay7083)
+- 👨‍💻 All of my projects are available at [https://github.com/shivendra7083](https://github.com/shivendra7083)
 
-<!-- - 📝 I regularly write articles on [https://github.com/abhay7083/KernelHookers](https://github.com/abhay7083/KernelHookers) -->
+<!-- - 📝 I regularly write articles on [https://github.com/shivendra7083/KernelHookers](https://github.com/shivendra7083/KernelHookers) -->
 
 - 💬 Ask me about **React, JS, Python GUIs**
 
@@ -29,7 +29,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<!-- <a href="https://codepen.io/abhay7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="abhay7083" height="30" width="40" /></a> -->
+<!-- <a href="https://codepen.io/shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="shivendra7083" height="30" width="40" /></a> -->
 <a href="https://twitter.com/geekydev_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="geekydev_" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/shivendra-singh-2ba447273" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="devendra-singh-08b613254" height="30" width="40" /></a>
 <!-- <a href="https://stackoverflow.com/users/20587126" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="20587126" height="30" width="40" /></a> -->
@@ -41,16 +41,16 @@
 <p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
 
 <h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/abhay7083"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="abhay7083" /></a></p><br><br>
+<p><a href="https://www.buymeacoffee.com/shivendra7083"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="shivendra7083" /></a></p><br><br>
 &nbsp;
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhay7083&show_icons=true&locale=en&layout=compact" alt="abhay7083"/></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=shivendra7083&show_icons=true&locale=en&layout=compact" alt="shivendra7083"/></p>
 
-<p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abhay7083&show_icons=true&locale=en" alt="abhay7083" /></p>
+<p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shivendra7083&show_icons=true&locale=en" alt="shivendra7083" /></p>
 
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abhay7083&" alt="abhay7083" /></p>
+<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shivendra7083&" alt="shivendra7083" /></p>
 
 <!---
-Abhay7083/Abhay7083 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+shivendra7083/shivendra7083 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
