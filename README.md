@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shivendra7083" alt="shivendra7083" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/geekydev_?logo=twitter&style=for-the-badge" alt="geekydev_" /></a> </p>
+<p align="left"> <a href="https://twitter.com/shivendra7083" target="blank"><img src="https://img.shields.io/twitter/follow/shivendra7083?logo=twitter&style=for-the-badge" alt="Shivendra's Twitter" /></a> </p>
 
 <!-- - 🔭 I’m currently working on [Placemantra](https://github.com/shivendra7083/placemantra) -->
 
