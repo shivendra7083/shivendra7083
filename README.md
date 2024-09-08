@@ -23,7 +23,7 @@
 
 - 📫 How to reach me **shivendra7083@gmail.com**
 
-- 📄 Know about my experiences [https://www.linkedin.com/in/devendra-singh-08b613254/](https://www.linkedin.com/in/shivendra-singh-2ba447273/)
+- 📄 Know about my experiences [https://www.linkedin.com/in/shivendra-singh-2ba447273/](https://www.linkedin.com/in/shivendra-singh-2ba447273/)
 
 <!-- - ⚡ Fun fact **I eat a lot while coding. 😂** -->
 
