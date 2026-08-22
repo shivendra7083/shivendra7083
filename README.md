@@ -57,7 +57,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="./assets/github-stats.svg" alt="GitHub statistics including repositories, followers, stars, commits, pull requests and issues" />
+<img src="./assets/github-stats.svg" alt="GitHub statistics including repositories, followers, stars, commits, pull requests, issues and total lifetime contributions" />
 
 </div>
 
