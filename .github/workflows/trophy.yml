@@ -1,0 +1,32 @@
+name: Update Trophy Card
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '31 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  trophy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate trophy card
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: username=${{ github.repository_owner }}&theme=onedark&no-frame=true&margin-w=10&margin-h=10&row=1&column=6
+          path: assets/github-trophies.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit trophy card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-trophies.svg
+          git diff --cached --quiet || (git commit -m "Update GitHub trophy card" && git push)
