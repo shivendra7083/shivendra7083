@@ -37,7 +37,11 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-trophies.svg" alt="GitHub achievement trophies for Shivendra Singh" />
+<img src="./assets/github-trophies.svg" alt="GitHub achievement trophies for Shivendra Singh" />
+
+<br/>
+
+<sub>Trophy design based on <a href="https://github.com/lucthienphong1120/github-trophies">lucthienphong1120/github-trophies</a>.</sub>
 
 </div>
 
@@ -55,7 +59,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-stats.svg" alt="GitHub statistics including repositories, followers, stars, commits, pull requests and issues" />
+<img src="./assets/github-stats.svg" alt="GitHub statistics including repositories, followers, stars, commits, pull requests and issues" />
 
 </div>
 
@@ -65,7 +69,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-streak.svg" alt="GitHub total contributions, current streak and longest streak" />
+<img src="./assets/github-streak.svg" alt="GitHub total contributions, current streak and longest streak" />
 
 </div>
 
@@ -75,7 +79,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/contribution-activity-detailed.svg" alt="GitHub-style contribution calendar showing year, months, weekdays, daily activity, total contributions, active days, current streak and longest streak" />
+<img src="./assets/contribution-activity.svg" alt="Detailed GitHub contribution calendar with year, month labels, weekdays, activity levels, totals and streak information" />
 
 </div>
 
@@ -85,7 +89,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/top-languages.svg" alt="Top programming languages used across GitHub repositories" />
+<img src="./assets/top-languages.svg" alt="Top programming languages used across GitHub repositories" />
 
 </div>
 
