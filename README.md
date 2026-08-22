@@ -75,7 +75,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/contribution-activity.svg" alt="Detailed GitHub contribution calendar with month labels, weekdays, activity levels and yearly contribution totals" />
+<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/contribution-activity-detailed.svg" alt="GitHub-style contribution calendar showing year, months, weekdays, daily activity, total contributions, active days, current streak and longest streak" />
 
 </div>
 
