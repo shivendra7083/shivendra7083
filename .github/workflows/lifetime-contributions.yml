@@ -1,0 +1,138 @@
+name: Refresh Lifetime Contribution Stats
+
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub statistics with lifetime contributions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const token = process.env.GITHUB_TOKEN;
+          const login = process.env.GH_USER;
+          const year = new Date().getUTCFullYear();
+
+          const fmt = n => Number(n).toLocaleString('en-US');
+          const card = body => `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220"><rect width="100%" height="100%" rx="14" fill="#0d1117"/><rect x="1" y="1" width="758" height="218" rx="13" fill="none" stroke="#30363d"/>${body}</svg>`;
+
+          async function gql(query, variables={}) {
+            const r = await fetch('https://api.github.com/graphql', {
+              method: 'POST',
+              headers: {
+                Authorization: `Bearer ${token}`,
+                'Content-Type': 'application/json',
+                'User-Agent': 'github-profile-contribution-stats'
+              },
+              body: JSON.stringify({query, variables})
+            });
+            const j = await r.json();
+            if (!r.ok || j.errors) throw new Error(JSON.stringify(j.errors || j));
+            return j.data;
+          }
+
+          async function rest(path) {
+            const r = await fetch(`https://api.github.com${path}`, {
+              headers: {
+                Authorization: `Bearer ${token}`,
+                Accept: 'application/vnd.github+json',
+                'User-Agent': 'github-profile-contribution-stats'
+              }
+            });
+            if (!r.ok) throw new Error(`${r.status} ${path}`);
+            return r.json();
+          }
+
+          async function repos() {
+            const all = [];
+            for (let p = 1; p <= 10; p++) {
+              const page = await rest(`/users/${login}/repos?per_page=100&page=${p}&type=owner`);
+              all.push(...page);
+              if (page.length < 100) break;
+            }
+            return all;
+          }
+
+          (async () => {
+            const user = (await gql(`query($login:String!){
+              user(login:$login){
+                createdAt
+                followers{totalCount}
+                repositories(ownerAffiliations:OWNER,privacy:PUBLIC,first:1){totalCount}
+              }
+            }`, {login})).user;
+
+            const rs = await repos();
+            const stars = rs.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+            const startYear = Math.max(2014, new Date(user.createdAt).getUTCFullYear());
+
+            let commits = 0;
+            let prs = 0;
+            let issues = 0;
+            let reviews = 0;
+            let totalContributions = 0;
+            let currentYearContributions = 0;
+
+            for (let y = startYear; y <= year; y++) {
+              const from = `${y}-01-01T00:00:00Z`;
+              const to = y === year ? new Date().toISOString() : `${y + 1}-01-01T00:00:00Z`;
+              const c = (await gql(`query($login:String!,$from:DateTime!,$to:DateTime!){
+                user(login:$login){
+                  contributionsCollection(from:$from,to:$to){
+                    totalCommitContributions
+                    totalPullRequestContributions
+                    totalIssueContributions
+                    totalPullRequestReviewContributions
+                    contributionCalendar{totalContributions}
+                  }
+                }
+              }`, {login, from, to})).user.contributionsCollection;
+
+              commits += c.totalCommitContributions;
+              prs += c.totalPullRequestContributions;
+              issues += c.totalIssueContributions;
+              reviews += c.totalPullRequestReviewContributions;
+              totalContributions += c.contributionCalendar.totalContributions;
+              if (y === year) currentYearContributions = c.contributionCalendar.totalContributions;
+            }
+
+            const stats = `
+              <text x="28" y="34" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">GitHub Statistics</text>
+              <text x="28" y="56" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">${login} • refreshed daily</text>
+              <g font-family="Arial,sans-serif">
+                <text x="28" y="96" fill="#8b949e" font-size="11">Repositories</text><text x="28" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(user.repositories.totalCount)}</text>
+                <text x="150" y="96" fill="#8b949e" font-size="11">Followers</text><text x="150" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(user.followers.totalCount)}</text>
+                <text x="255" y="96" fill="#8b949e" font-size="11">Stars</text><text x="255" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(stars)}</text>
+                <text x="345" y="96" fill="#8b949e" font-size="11">Commits</text><text x="345" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(commits)}</text>
+                <text x="455" y="96" fill="#8b949e" font-size="11">PRs</text><text x="455" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(prs)}</text>
+                <text x="550" y="96" fill="#8b949e" font-size="11">Issues</text><text x="550" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(issues)}</text>
+              </g>
+              <line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
+              <text x="28" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Pull Request Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(reviews)}</text>
+              <text x="210" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">${year} Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(currentYearContributions)}</text>
+              <text x="430" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Total Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(totalContributions)}</text>`;
+
+            fs.writeFileSync('assets/github-stats.svg', card(stats));
+          })().catch(err => { console.error(err); process.exit(1); });
+          NODE
+
+      - name: Commit updated stats card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-stats.svg
+          git diff --cached --quiet || (git commit -m "Refresh lifetime contribution stats" && git push)
