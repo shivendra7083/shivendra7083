@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=shivendra7083&label=Profile%20views&color=0e75b6&style=flat" alt="shivendra7083" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shivendra7083" alt="shivendra7083" /></a> </p>
+<p align="left"> <img src="./profile/trophy.svg" alt="GitHub profile trophies" /> </p>
 
 <p align="left"> <a href="https://x.com/Shivendra7083" target="blank"><img src="https://img.shields.io/badge/X-Shivendra7083-000000?logo=x&style=for-the-badge" alt="Shivendra's X profile" /></a> </p>
 
@@ -44,11 +44,11 @@
 <p><a href="https://www.buymeacoffee.com/shivendra7083"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="shivendra7083" /></a></p><br><br>
 &nbsp;
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=shivendra7083&show_icons=true&locale=en&layout=compact" alt="shivendra7083"/></p>
+<p align="center"><img align="center" src="./profile/top-langs.svg" alt="GitHub top languages"/></p>
 
-<p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shivendra7083&show_icons=true&locale=en" alt="shivendra7083" /></p>
+<p align="center">&nbsp;<img align="center" src="./profile/stats.svg" alt="GitHub statistics" /></p>
 
-<p align="center"><img align="center" src="https://streak-stats.demolab.com/?user=shivendra7083" alt="shivendra7083 GitHub streak" /></p>
+<p align="center"><img align="center" src="https://streak-stats.demolab.com?user=shivendra7083" alt="shivendra7083 GitHub streak" /></p>
 
 <!---
 shivendra7083/shivendra7083 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
