@@ -1,12 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210"><rect width="100%" height="100%" rx="14" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220"><rect width="100%" height="100%" rx="14" fill="#0d1117"/><rect x="1" y="1" width="758" height="218" rx="13" fill="none" stroke="#30363d"/>
     <text x="28" y="35" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">GitHub Statistics</text>
-    <text x="28" y="58" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">shivendra7083 • updated 2026-08-22</text>
+    <text x="28" y="58" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">shivendra7083 • refreshed daily</text>
     <g font-family="Arial,sans-serif">
-      <text x="28" y="98" fill="#8b949e" font-size="12">Repositories</text><text x="28" y="122" fill="#f0f6fc" font-size="22" font-weight="700">13</text>
-      <text x="155" y="98" fill="#8b949e" font-size="12">Followers</text><text x="155" y="122" fill="#f0f6fc" font-size="22" font-weight="700">4</text>
-      <text x="270" y="98" fill="#8b949e" font-size="12">Stars</text><text x="270" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
-      <text x="365" y="98" fill="#8b949e" font-size="12">Commits</text><text x="365" y="122" fill="#f0f6fc" font-size="22" font-weight="700">273</text>
-      <text x="470" y="98" fill="#8b949e" font-size="12">PRs</text><text x="470" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
-      <text x="575" y="98" fill="#8b949e" font-size="12">Issues</text><text x="575" y="122" fill="#f0f6fc" font-size="22" font-weight="700">0</text>
+      <text x="28" y="96" fill="#8b949e" font-size="11">Repositories</text><text x="28" y="122" fill="#f0f6fc" font-size="22" font-weight="700">13</text>
+      <text x="150" y="96" fill="#8b949e" font-size="11">Followers</text><text x="150" y="122" fill="#f0f6fc" font-size="22" font-weight="700">4</text>
+      <text x="255" y="96" fill="#8b949e" font-size="11">Stars</text><text x="255" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
+      <text x="345" y="96" fill="#8b949e" font-size="11">Commits</text><text x="345" y="122" fill="#f0f6fc" font-size="22" font-weight="700">275</text>
+      <text x="455" y="96" fill="#8b949e" font-size="11">PRs</text><text x="455" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
+      <text x="550" y="96" fill="#8b949e" font-size="11">Issues</text><text x="550" y="122" fill="#f0f6fc" font-size="22" font-weight="700">0</text>
     </g>
-    <text x="28" y="166" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">Pull Request Reviews</text><text x="28" y="190" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">1</text></svg>
+    <line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
+    <text x="28" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Pull Request Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">1</text>
+    <text x="210" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Current year contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">326</text></svg>
