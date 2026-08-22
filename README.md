@@ -26,7 +26,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 - 🌱 Currently learning **Java + DSA**
 - 📱 Exploring **Android / Kotlin / Jetpack Compose**
 - 🛠️ Building practical software projects
-- 🧠 Practicing **LeetCode** consistently
+- 🧠 Strengthening problem-solving and coding fundamentals
 - 📫 **shivendra7083@gmail.com**
 
 [**View all my repositories →**](https://github.com/shivendra7083?tab=repositories)
@@ -75,7 +75,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/contribution-activity.svg" alt="GitHub contribution activity heatmap" />
+<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/contribution-activity.svg" alt="Detailed GitHub contribution calendar with month labels, weekdays, activity levels and yearly contribution totals" />
 
 </div>
 
@@ -88,20 +88,6 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 <img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/top-languages.svg" alt="Top programming languages used across GitHub repositories" />
 
 </div>
-
----
-
-## 🧠 LeetCode & DSA
-
-<div align="center">
-
-<a href="https://github.com/shivendra7083/Leetcode_DSA">
-  <img src="https://img.shields.io/badge/LeetCode-DSA%20Practice-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode DSA practice repository" />
-</a>
-
-</div>
-
-I regularly practice LeetCode and keep my solutions organized in my DSA repository.
 
 ---
 
