@@ -1,0 +1,194 @@
+name: Update Detailed Contribution Card
+
+on:
+  schedule:
+    - cron: "27 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub-style contribution card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const token = process.env.GITHUB_TOKEN;
+          const login = process.env.GH_USER;
+
+          const esc = s => String(s)
+            .replace(/&/g,'&amp;')
+            .replace(/</g,'&lt;')
+            .replace(/>/g,'&gt;')
+            .replace(/"/g,'&quot;');
+          const fmt = n => Number(n).toLocaleString('en-US');
+
+          async function gql(query, variables={}) {
+            const r = await fetch('https://api.github.com/graphql', {
+              method:'POST',
+              headers:{
+                Authorization:`Bearer ${token}`,
+                'Content-Type':'application/json',
+                'User-Agent':'github-profile-contribution-card'
+              },
+              body:JSON.stringify({query,variables})
+            });
+            const j = await r.json();
+            if(!r.ok || j.errors) throw new Error(JSON.stringify(j.errors || j));
+            return j.data;
+          }
+
+          function palette(count, max) {
+            if (!count) return '#161b22';
+            const ratio = count / Math.max(1, max);
+            if (ratio < 0.15) return '#0e4429';
+            if (ratio < 0.35) return '#006d32';
+            if (ratio < 0.60) return '#26a641';
+            return '#39d353';
+          }
+
+          function streakInfo(days) {
+            let longest = 0, current = 0, run = 0, active = 0, total = 0;
+            for (const d of days) {
+              total += d.contributionCount;
+              if (d.contributionCount > 0) {
+                run++;
+                active++;
+                longest = Math.max(longest, run);
+              } else {
+                run = 0;
+              }
+            }
+            for (let i = days.length - 1; i >= 0; i--) {
+              if (days[i].contributionCount > 0) current++;
+              else break;
+            }
+            return { total, active, current, longest };
+          }
+
+          (async () => {
+            const today = new Date();
+            const end = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+            const start = new Date(end);
+            start.setUTCDate(start.getUTCDate() - 364);
+
+            const from = start.toISOString();
+            const to = new Date(end.getTime() + 24*60*60*1000 - 1).toISOString();
+
+            const data = await gql(`
+              query($login:String!,$from:DateTime!,$to:DateTime!) {
+                user(login:$login) {
+                  contributionsCollection(from:$from,to:$to) {
+                    contributionCalendar {
+                      totalContributions
+                      weeks {
+                        firstDay
+                        contributionDays { date contributionCount }
+                      }
+                    }
+                  }
+                }
+              }
+            `, { login, from, to });
+
+            const calendar = data.user.contributionsCollection.contributionCalendar;
+            const days = calendar.weeks.flatMap(w => w.contributionDays)
+              .filter(d => d.date >= from.slice(0,10) && d.date <= to.slice(0,10))
+              .sort((a,b) => a.date.localeCompare(b.date));
+
+            const stats = streakInfo(days);
+            const max = Math.max(1, ...days.map(d => d.contributionCount));
+
+            const cell = 11;
+            const gap = 3;
+            const left = 42;
+            const top = 72;
+            const columns = calendar.weeks.length;
+            const width = Math.max(820, left + columns * (cell + gap) + 28);
+            const height = 252;
+
+            let body = `
+              <text x="22" y="28" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Contribution Activity</text>
+              <text x="22" y="49" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">${today.getUTCFullYear()} • ${fmt(stats.total)} contributions in the last year</text>
+              <text x="${width-310}" y="28" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">Less</text>
+              <rect x="${width-275}" y="20" width="10" height="10" rx="2" fill="#161b22"/>
+              <rect x="${width-259}" y="20" width="10" height="10" rx="2" fill="#0e4429"/>
+              <rect x="${width-243}" y="20" width="10" height="10" rx="2" fill="#006d32"/>
+              <rect x="${width-227}" y="20" width="10" height="10" rx="2" fill="#26a641"/>
+              <rect x="${width-211}" y="20" width="10" height="10" rx="2" fill="#39d353"/>
+              <text x="${width-195}" y="28" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">More</text>
+            `;
+
+            const weekdayLabels = [['Mon',1],['Wed',3],['Fri',5]];
+            for (const [label,row] of weekdayLabels) {
+              body += `<text x="8" y="${top + row*(cell+gap) + 9}" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">${label}</text>`;
+            }
+
+            // Month labels aligned with the first visible week of each month.
+            let lastMonth = -1;
+            calendar.weeks.forEach((week, wi) => {
+              const d = new Date(week.firstDay + 'T00:00:00Z');
+              const month = d.getUTCMonth();
+              if (month !== lastMonth) {
+                const label = d.toLocaleString('en-US', {month:'short', timeZone:'UTC'});
+                body += `<text x="${left + wi*(cell+gap)}" y="61" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">${label}</text>`;
+                lastMonth = month;
+              }
+            });
+
+            calendar.weeks.forEach((week, wi) => {
+              week.contributionDays.forEach(day => {
+                if (day.date < from.slice(0,10) || day.date > to.slice(0,10)) return;
+                const date = new Date(day.date + 'T00:00:00Z');
+                const row = date.getUTCDay();
+                const x = left + wi*(cell+gap);
+                const y = top + row*(cell+gap);
+                const title = `${day.contributionCount} contribution${day.contributionCount === 1 ? '' : 's'} on ${day.date}`;
+                body += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2" fill="${palette(day.contributionCount,max)}"><title>${esc(title)}</title></rect>`;
+              });
+            });
+
+            const summaryY = 176;
+            body += `
+              <line x1="22" y1="${summaryY}" x2="${width-22}" y2="${summaryY}" stroke="#30363d"/>
+              <text x="22" y="201" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">Total contributions</text>
+              <text x="22" y="222" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(stats.total)}</text>
+              <text x="165" y="201" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">Active days</text>
+              <text x="165" y="222" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(stats.active)}</text>
+              <text x="290" y="201" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">Current streak</text>
+              <text x="290" y="222" fill="#ff7b72" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(stats.current)} days</text>
+              <text x="455" y="201" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">Longest streak</text>
+              <text x="455" y="222" fill="#ff7b72" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(stats.longest)} days</text>
+              <text x="${width-170}" y="222" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">Updated daily</text>
+            `;
+
+            const svg = `<?xml version="1.0" encoding="UTF-8"?>
+              <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+                <rect width="100%" height="100%" rx="14" fill="#0d1117"/>
+                <rect x="1" y="1" width="${width-2}" height="${height-2}" rx="13" fill="none" stroke="#30363d"/>
+                ${body}
+              </svg>`;
+
+            fs.mkdirSync('assets', {recursive:true});
+            fs.writeFileSync('assets/contribution-activity-detailed.svg', svg);
+          })().catch(err => {
+            console.error(err);
+            process.exit(1);
+          });
+          NODE
+
+      - name: Commit updated contribution card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contribution-activity-detailed.svg
+          git diff --cached --quiet || (git commit -m "Update detailed contribution card" && git push)
