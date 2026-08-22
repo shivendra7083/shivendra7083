@@ -85,11 +85,12 @@ jobs:
             const rs=await repos();
             const stars=rs.reduce((s,r)=>s+r.stargazers_count,0);
             const start=Math.max(2014,new Date(u.createdAt).getUTCFullYear());
-            let commits=0,prs=0,issues=0,reviews=0,weeks=[];
+            let commits=0,prs=0,issues=0,reviews=0,totalContributions=0,weeks=[];
             for(let y=start;y<=year;y++){
               const {from,to}=range(y);
-              const c=(await gql(`query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions,totalPullRequestContributions,totalIssueContributions,totalPullRequestReviewContributions,contributionCalendar{weeks{contributionDays{date,contributionCount}}}}}}`,{login,from,to})).user.contributionsCollection;
+              const c=(await gql(`query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions,totalPullRequestContributions,totalIssueContributions,totalPullRequestReviewContributions,contributionCalendar{totalContributions,weeks{contributionDays{date,contributionCount}}}}}}`,{login,from,to})).user.contributionsCollection;
               commits+=c.totalCommitContributions; prs+=c.totalPullRequestContributions; issues+=c.totalIssueContributions; reviews+=c.totalPullRequestReviewContributions;
+              totalContributions+=c.contributionCalendar.totalContributions;
               if(y===year) weeks=c.contributionCalendar.weeks;
             }
             const days=weeks.flatMap(w=>w.contributionDays).sort((a,b)=>a.date.localeCompare(b.date));
@@ -110,7 +111,8 @@ jobs:
               <text x="550" y="96" fill="#8b949e" font-size="11">Issues</text><text x="550" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(issues)}</text>
               </g><line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
               <text x="28" y="174" fill="#8b949e" font-family="Arial" font-size="11">PR Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(reviews)}</text>
-              <text x="210" y="174" fill="#8b949e" font-family="Arial" font-size="11">${year} Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(streak.total)}</text>`;
+              <text x="210" y="174" fill="#8b949e" font-family="Arial" font-size="11">${year} Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(streak.total)}</text>
+              <text x="430" y="174" fill="#8b949e" font-family="Arial" font-size="11">Total Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(totalContributions)}</text>`;
 
             const streakCard=`
               <text x="28" y="35" fill="#ff7b72" font-family="Arial" font-size="19" font-weight="700">GitHub Contribution Streak</text>
