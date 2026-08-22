@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shivendra7083" alt="shivendra7083" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/shivendra7083" target="blank"><img src="https://img.shields.io/twitter/follow/shivendra7083?logo=twitter&style=for-the-badge" alt="Shivendra's Twitter" /></a> </p>
+<p align="left"> <a href="https://x.com/Shivendra7083" target="blank"><img src="https://img.shields.io/badge/X-Shivendra7083-000000?logo=x&style=for-the-badge" alt="Shivendra's X profile" /></a> </p>
 
 <!-- - 🔭 I’m currently working on [Placemantra](https://github.com/shivendra7083/placemantra) -->
 
@@ -30,11 +30,11 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <!-- <a href="https://codepen.io/shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="shivendra7083" height="30" width="40" /></a> -->
-<a href="https://x.com/Shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="geekydev_" height="30" width="40" /></a>
-<a href="https://www.linkedin.com/in/shivendra-singh-2ba447273" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="devendra-singh-08b613254" height="30" width="40" /></a>
+<a href="https://x.com/Shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Shivendra7083" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/shivendra-singh-2ba447273" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Shivendra Singh" height="30" width="40" /></a>
 <!-- <a href="https://stackoverflow.com/users/20587126" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="20587126" height="30" width="40" /></a> -->
 <a href="https://instagram.com/shivendra2943" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="shivendra7083" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="ds450974" height="30" width="40" /></a>
+<a href="https://www.hackerrank.com/shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="shivendra7083" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools :</h3>
@@ -48,7 +48,7 @@
 
 <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shivendra7083&show_icons=true&locale=en" alt="shivendra7083" /></p>
 
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shivendra7083&" alt="shivendra7083" /></p>
+<p align="center"><img align="center" src="https://streak-stats.demolab.com/?user=shivendra7083" alt="shivendra7083 GitHub streak" /></p>
 
 <!---
 shivendra7083/shivendra7083 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
