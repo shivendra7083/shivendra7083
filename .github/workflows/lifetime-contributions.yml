@@ -70,15 +70,16 @@ jobs:
           (async () => {
             const user = (await gql(`query($login:String!){
               user(login:$login){
-                createdAt
                 followers{totalCount}
                 repositories(ownerAffiliations:OWNER,privacy:PUBLIC,first:1){totalCount}
+                contributionsCollection{contributionYears}
               }
             }`, {login})).user;
 
             const rs = await repos();
             const stars = rs.reduce((sum, repo) => sum + repo.stargazers_count, 0);
-            const startYear = Math.max(2014, new Date(user.createdAt).getUTCFullYear());
+            const contributionYears = [...new Set((user.contributionsCollection?.contributionYears || []).map(Number))].sort((a, b) => a - b);
+            if (!contributionYears.length || contributionYears[contributionYears.length - 1] !== year) contributionYears.push(year);
 
             let commits = 0;
             let prs = 0;
@@ -87,7 +88,7 @@ jobs:
             let totalContributions = 0;
             let currentYearContributions = 0;
 
-            for (let y = startYear; y <= year; y++) {
+            for (const y of contributionYears) {
               const from = `${y}-01-01T00:00:00Z`;
               const to = y === year ? new Date().toISOString() : `${y + 1}-01-01T00:00:00Z`;
               const c = (await gql(`query($login:String!,$from:DateTime!,$to:DateTime!){
@@ -97,6 +98,7 @@ jobs:
                     totalPullRequestContributions
                     totalIssueContributions
                     totalPullRequestReviewContributions
+                    restrictedContributionsCount
                     contributionCalendar{totalContributions}
                   }
                 }
@@ -106,7 +108,7 @@ jobs:
               prs += c.totalPullRequestContributions;
               issues += c.totalIssueContributions;
               reviews += c.totalPullRequestReviewContributions;
-              totalContributions += c.contributionCalendar.totalContributions;
+              totalContributions += c.contributionCalendar.totalContributions + (c.restrictedContributionsCount || 0);
               if (y === year) currentYearContributions = c.contributionCalendar.totalContributions;
             }
 

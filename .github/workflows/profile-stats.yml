@@ -81,16 +81,17 @@ jobs:
           const color = (n,max) => !n?'#161b22':(n/max<.15?'#0e4429':n/max<.35?'#006d32':n/max<.6?'#26a641':'#39d353');
 
           (async()=>{
-            const u=(await gql(`query($login:String!){user(login:$login){createdAt followers{totalCount} repositories(ownerAffiliations:OWNER,privacy:PUBLIC,first:1){totalCount}}}`,{login})).user;
+            const u=(await gql(`query($login:String!){user(login:$login){followers{totalCount} repositories(ownerAffiliations:OWNER,privacy:PUBLIC,first:1){totalCount} contributionsCollection{contributionYears}}}`,{login})).user;
             const rs=await repos();
             const stars=rs.reduce((s,r)=>s+r.stargazers_count,0);
-            const start=Math.max(2014,new Date(u.createdAt).getUTCFullYear());
+            const contributionYears=[...new Set((u.contributionsCollection?.contributionYears||[]).map(Number))].sort((a,b)=>a-b);
+            if(!contributionYears.length||contributionYears[contributionYears.length-1]!==year) contributionYears.push(year);
             let commits=0,prs=0,issues=0,reviews=0,totalContributions=0,weeks=[];
-            for(let y=start;y<=year;y++){
+            for(const y of contributionYears){
               const {from,to}=range(y);
-              const c=(await gql(`query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions,totalPullRequestContributions,totalIssueContributions,totalPullRequestReviewContributions,contributionCalendar{totalContributions,weeks{contributionDays{date,contributionCount}}}}}}`,{login,from,to})).user.contributionsCollection;
+              const c=(await gql(`query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions,totalPullRequestContributions,totalIssueContributions,totalPullRequestReviewContributions,restrictedContributionsCount,contributionCalendar{totalContributions,weeks{contributionDays{date,contributionCount}}}}}}`,{login,from,to})).user.contributionsCollection;
               commits+=c.totalCommitContributions; prs+=c.totalPullRequestContributions; issues+=c.totalIssueContributions; reviews+=c.totalPullRequestReviewContributions;
-              totalContributions+=c.contributionCalendar.totalContributions;
+              totalContributions+=c.contributionCalendar.totalContributions + (c.restrictedContributionsCount||0);
               if(y===year) weeks=c.contributionCalendar.weeks;
             }
             const days=weeks.flatMap(w=>w.contributionDays).sort((a,b)=>a.date.localeCompare(b.date));
