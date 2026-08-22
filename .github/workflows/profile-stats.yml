@@ -1,0 +1,165 @@
+name: Update Profile Stats
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'assets/**'
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate profile cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const token = process.env.GITHUB_TOKEN;
+          const login = process.env.GH_USER;
+
+          const esc = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+          const fmt = (n) => Number(n).toLocaleString('en-US');
+          const svg = (body, width=760, height=210) => `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><rect width="100%" height="100%" rx="14" fill="#0d1117"/>${body}</svg>`;
+
+          async function gql(query, variables={}) {
+            const r = await fetch('https://api.github.com/graphql', {
+              method:'POST',
+              headers:{'Authorization':`Bearer ${token}`,'Content-Type':'application/json','User-Agent':'profile-stats-action'},
+              body:JSON.stringify({query,variables})
+            });
+            const j = await r.json();
+            if (!r.ok || j.errors) throw new Error(JSON.stringify(j.errors || j));
+            return j.data;
+          }
+
+          async function rest(path) {
+            const r = await fetch(`https://api.github.com${path}`, {
+              headers:{'Authorization':`Bearer ${token}`,'Accept':'application/vnd.github+json','User-Agent':'profile-stats-action'}
+            });
+            if (!r.ok) throw new Error(`${r.status} ${path}`);
+            return r.json();
+          }
+
+          async function allRepos() {
+            const repos=[];
+            for (let page=1; page<=10; page++) {
+              const batch = await rest(`/users/${login}/repos?per_page=100&page=${page}&type=owner`);
+              repos.push(...batch);
+              if (batch.length < 100) break;
+            }
+            return repos;
+          }
+
+          function yearRange(y) {
+            const from = `${y}-01-01T00:00:00Z`;
+            const to = y === new Date().getUTCFullYear() ? new Date().toISOString() : `${y+1}-01-01T00:00:00Z`;
+            return {from,to};
+          }
+
+          function longestAndCurrent(calendar) {
+            const days = calendar.flatMap(w=>w.contributionDays).sort((a,b)=>a.date.localeCompare(b.date));
+            let longest=0,current=0,run=0;
+            for (const d of days) {
+              if (d.contributionCount>0) { run++; longest=Math.max(longest,run); }
+              else run=0;
+            }
+            for (let i=days.length-1;i>=0;i--) {
+              if (days[i].contributionCount>0) current++;
+              else break;
+            }
+            return {longest,current,total:days.reduce((s,d)=>s+d.contributionCount,0)};
+          }
+
+          (async()=>{
+            const user = await gql(`query($login:String!){user(login:$login){name followers{totalCount} following{totalCount} repositories(ownerAffiliations:OWNER,privacy:PUBLIC,first:1){totalCount} createdAt}}`,{login});
+            const u=user.user;
+            const repos=await allRepos();
+            const stars=repos.reduce((s,r)=>s+r.stargazers_count,0);
+
+            const currentYear=new Date().getUTCFullYear();
+            const startYear=Math.max(2014, new Date(u.createdAt).getUTCFullYear());
+            let lifetimeCommits=0,lifetimePRs=0,lifetimeIssues=0,lifetimeReviews=0;
+            let currentCalendar=[];
+            for(let y=startYear;y<=currentYear;y++){
+              const {from,to}=yearRange(y);
+              const d=await gql(`query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions,totalPullRequestContributions,totalIssueContributions,totalPullRequestReviewContributions,contributionCalendar{weeks{contributionDays{date,contributionCount}}}}}}`,{login,from,to});
+              const c=d.user.contributionsCollection;
+              lifetimeCommits+=c.totalCommitContributions;
+              lifetimePRs+=c.totalPullRequestContributions;
+              lifetimeIssues+=c.totalIssueContributions;
+              lifetimeReviews+=c.totalPullRequestReviewContributions;
+              if(y===currentYear) currentCalendar=c.contributionCalendar.weeks;
+            }
+
+            const streak=longestAndCurrent(currentCalendar);
+
+            const languageBytes={};
+            for(const r of repos.slice(0,100)){
+              try{
+                const langs=await rest(`/repos/${login}/${encodeURIComponent(r.name)}/languages`);
+                for(const [lang,bytes] of Object.entries(langs)) languageBytes[lang]=(languageBytes[lang]||0)+bytes;
+              }catch{}
+            }
+            const top=Object.entries(languageBytes).sort((a,b)=>b[1]-a[1]).slice(0,6);
+            const max=top[0]?.[1]||1;
+
+            const statsBody=`
+              <text x="28" y="35" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">GitHub Statistics</text>
+              <text x="28" y="58" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">${esc(login)} • updated ${new Date().toISOString().slice(0,10)}</text>
+              <g font-family="Arial,sans-serif">
+                <text x="28" y="98" fill="#8b949e" font-size="12">Repositories</text><text x="28" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(u.repositories.totalCount)}</text>
+                <text x="155" y="98" fill="#8b949e" font-size="12">Followers</text><text x="155" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(u.followers.totalCount)}</text>
+                <text x="270" y="98" fill="#8b949e" font-size="12">Stars</text><text x="270" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(stars)}</text>
+                <text x="365" y="98" fill="#8b949e" font-size="12">Commits</text><text x="365" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(lifetimeCommits)}</text>
+                <text x="470" y="98" fill="#8b949e" font-size="12">PRs</text><text x="470" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(lifetimePRs)}</text>
+                <text x="575" y="98" fill="#8b949e" font-size="12">Issues</text><text x="575" y="122" fill="#f0f6fc" font-size="22" font-weight="700">${fmt(lifetimeIssues)}</text>
+              </g>
+              <text x="28" y="166" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">Pull Request Reviews</text><text x="28" y="190" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">${fmt(lifetimeReviews)}</text>`;
+
+            const streakBody=`
+              <text x="28" y="35" fill="#ff7b72" font-family="Arial,sans-serif" font-size="19" font-weight="700">GitHub Contribution Streak</text>
+              <text x="28" y="58" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">${esc(login)} • ${currentYear}</text>
+              <g font-family="Arial,sans-serif">
+                <text x="55" y="105" fill="#8b949e" font-size="12">Total Contributions</text><text x="55" y="138" fill="#f0f6fc" font-size="30" font-weight="700">${fmt(streak.total)}</text>
+                <text x="295" y="105" fill="#8b949e" font-size="12">Current Streak</text><text x="295" y="138" fill="#ff7b72" font-size="30" font-weight="700">${fmt(streak.current)} days</text>
+                <text x="515" y="105" fill="#8b949e" font-size="12">Longest Streak</text><text x="515" y="138" fill="#ff7b72" font-size="30" font-weight="700">${fmt(streak.longest)} days</text>
+              </g>
+              <text x="55" y="175" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">Calculated from GitHub contribution data.</text>`;
+
+            let y=70;
+            const langParts=top.map(([name,bytes],i)=>{
+              const pct=(bytes/max*100).toFixed(1);
+              const bar=Math.max(60,Math.round(bytes/max*330));
+              const colors=['#58a6ff','#f78166','#3fb950','#d29922','#bc8cff','#79c0ff'];
+              const color=colors[i%colors.length];
+              const out=`<text x="28" y="${y}" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="13">${esc(name)}</text><text x="380" y="${y}" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">${pct}%</text><rect x="28" y="${y+12}" width="330" height="8" rx="4" fill="#21262d"/><rect x="28" y="${y+12}" width="${bar}" height="8" rx="4" fill="${color}"/>`;
+              y+=42; return out;
+            }).join('');
+            const langsBody=`<text x="28" y="35" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Top Languages</text>${langParts || '<text x="28" y="80" fill="#8b949e" font-family="Arial,sans-serif" font-size="13">No language data available yet.</text>'}`;
+
+            fs.mkdirSync('assets',{recursive:true});
+            fs.writeFileSync('assets/github-stats.svg',svg(statsBody,760,210));
+            fs.writeFileSync('assets/github-streak.svg',svg(streakBody,760,210));
+            fs.writeFileSync('assets/top-languages.svg',svg(langsBody,500,320));
+          })().catch(err=>{ console.error(err); process.exit(1); });
+          NODE
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git diff --cached --quiet || (git commit -m "Update profile statistics" && git push)
