@@ -1,49 +1,123 @@
-<h1 align="center">Hi 👋, I'm Shivendra Singh</h1>
-<h3 align="center">A passionate aspiring Android developer from India.</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=shivendra7083&label=Profile%20views&color=0e75b6&style=flat" alt="shivendra7083" /> </p>
+# Hi 👋, I'm Shivendra Singh
 
-<p align="left"> <a href="https://github-profile-trophy.vercel.app/?username=shivendra7083"><img src="https://github-profile-trophy.vercel.app/?username=shivendra7083&theme=flat&no-frame=true&margin-w=8&row=1" alt="GitHub profile trophies" /></a> </p>
+### Computer Science Student • Java • DSA • Android • Kotlin
 
-<p align="left"> <a href="https://x.com/Shivendra7083" target="blank"><img src="https://img.shields.io/badge/X-Shivendra7083-000000?logo=x&style=for-the-badge" alt="Shivendra's X profile" /></a> </p>
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=20&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=680&lines=Building+useful+software;Learning+Java+%26+DSA;Exploring+Android+%26+Jetpack+Compose" alt="Typing introduction" />
 
-- 🌱 I’m currently learning **JAVA**
-
-- 👨‍💻 All of my projects are available at [https://github.com/shivendra7083](https://github.com/shivendra7083)
-
-- 💬 Ask me about **React, JS, Python GUIs**
-
-- 📫 How to reach me **shivendra7083@gmail.com**
-
-- 📄 Know about my experiences [https://www.linkedin.com/in/shivendra-singh-2ba447273/](https://www.linkedin.com/in/shivendra-singh-2ba447273/)
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://x.com/Shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Shivendra7083" height="30" width="40" /></a>
-<a href="https://www.linkedin.com/in/shivendra-singh-2ba447273" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Shivendra Singh" height="30" width="40" /></a>
-<a href="https://instagram.com/shivendra2943" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="shivendra7083" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="shivendra7083" height="30" width="40" /></a>
+<p>
+  <a href="https://github.com/shivendra7083"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/shivendra-singh-2ba447273/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/Shivendra7083"><img src="https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
+  <a href="mailto:shivendra7083@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
-<h3 align="left">Languages and Tools :</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+<img src="https://komarev.com/ghpvc/?username=shivendra7083&label=Profile%20views&color=58A6FF&style=flat-square" alt="Profile views" />
 
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/shivendra7083"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="shivendra7083" /></a></p>
+</div>
+
+---
+
+## 👨‍💻 About Me
+
+I'm a Computer Science student focused on **Java, Data Structures & Algorithms, Android development, Kotlin and Jetpack Compose**.
+
+- 🌱 Currently learning **Java + DSA**
+- 📱 Exploring **Android / Kotlin / Jetpack Compose**
+- 🛠️ Building practical software projects
+- 🧠 Practicing **LeetCode** consistently
+- 📫 **shivendra7083@gmail.com**
+
+[**View all my repositories →**](https://github.com/shivendra7083?tab=repositories)
+
+---
+
+## 🏆 GitHub Achievements
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-trophies.svg" alt="GitHub achievement trophies for Shivendra Singh" />
+
+</div>
+
+---
+
+## 🧰 Languages & Tools
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-stats.svg" alt="GitHub statistics including repositories, followers, stars and contributions" />
+  <img src="https://skillicons.dev/icons?i=java,kotlin,androidstudio,gradle,python,javascript,react,nodejs,django,mysql,mongodb,git,github,figma" alt="Java Kotlin Android Studio Gradle Python JavaScript React Node Django MySQL MongoDB Git GitHub Figma" />
 </p>
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-stats.svg" alt="GitHub statistics including repositories, followers, stars, commits, pull requests and issues" />
+
+</div>
+
+---
+
+## 🔥 GitHub Streak
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-streak.svg" alt="GitHub total contributions, current streak and longest streak" />
+
+</div>
+
+---
+
+## 📈 Contribution Activity
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/contribution-activity.svg" alt="GitHub contribution activity heatmap" />
+
+</div>
+
+---
+
+## 💻 Top Languages
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/top-languages.svg" alt="Top programming languages used across GitHub repositories" />
+
+</div>
+
+---
+
+## 🧠 LeetCode & DSA
+
+<div align="center">
+
+<a href="https://github.com/shivendra7083/Leetcode_DSA">
+  <img src="https://img.shields.io/badge/LeetCode-DSA%20Practice-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode DSA practice repository" />
+</a>
+
+</div>
+
+I regularly practice LeetCode and keep my solutions organized in my DSA repository.
+
+---
+
+## 🤝 Connect With Me
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/github-streak.svg" alt="GitHub total contributions, current streak and longest streak" />
+  <a href="https://github.com/shivendra7083">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/shivendra-singh-2ba447273/">LinkedIn</a> ·
+  <a href="https://x.com/Shivendra7083">X</a> ·
+  <a href="https://instagram.com/shivendra2943">Instagram</a> ·
+  <a href="https://www.hackerrank.com/shivendra7083">HackerRank</a> ·
+  <a href="mailto:shivendra7083@gmail.com">Email</a>
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/main/assets/top-languages.svg" alt="Top programming languages used across GitHub repositories" />
-</p>
+<div align="center">
 
-<!---
-shivendra7083/shivendra7083 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at the README.
---->
+*Build • Practice • Improve* 🚀
+
+</div>
