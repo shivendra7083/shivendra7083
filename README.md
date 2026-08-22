@@ -39,9 +39,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <img src="./assets/github-trophies.svg" alt="GitHub achievement trophies for Shivendra Singh" />
 
-<br/>
-
-<sub>Trophy design based on <a href="https://github.com/lucthienphong1120/github-trophies">lucthienphong1120/github-trophies</a>.</sub>
+<p><sub>Trophy card powered by <a href="https://github.com/lucthienphong1120/github-trophies">github-trophies</a>.</sub></p>
 
 </div>
 
@@ -79,7 +77,17 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="./assets/contribution-activity.svg" alt="Detailed GitHub contribution calendar with year, month labels, weekdays, activity levels, totals and streak information" />
+<img src="./assets/contribution-activity.svg" alt="Detailed GitHub contribution calendar with month labels, weekdays, activity levels and yearly contribution totals" />
+
+</div>
+
+---
+
+## 📈 GitHub Activity Graph
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=shivendra7083&theme=github-compact&hide_border=true&area=true&custom_title=Shivendra%27s%20GitHub%20Activity" alt="GitHub activity graph showing contribution activity over time" />
 
 </div>
 
