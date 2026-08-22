@@ -67,7 +67,7 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 <div align="center">
 
-<img src="./assets/github-streak.svg" alt="GitHub total contributions, current streak and longest streak" />
+<img src="./assets/github-streak.svg?v=20260822" alt="GitHub total commits, current streak and longest streak" />
 
 </div>
 
