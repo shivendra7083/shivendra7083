@@ -45,7 +45,7 @@ jobs:
           async function gql(query, variables={}) {
             const r = await fetch('https://api.github.com/graphql', {
               method:'POST',
-              headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json','User-Agent':'github-profile-cards'},
+              headers:{Authorization:'Bearer ' + token,'Content-Type':'application/json','User-Agent':'github-profile-cards'},
               body:JSON.stringify({query,variables})
             });
             const j = await r.json();
@@ -55,7 +55,7 @@ jobs:
 
           async function rest(path) {
             const r = await fetch(`https://api.github.com${path}`, {
-              headers:{Authorization:`Bearer ${token}`,'Accept':'application/vnd.github+json','User-Agent':'github-profile-cards'}
+              headers:{Authorization:'Bearer ' + token,'Accept':'application/vnd.github+json','User-Agent':'github-profile-cards'}
             });
             if(!r.ok) throw new Error(`${r.status} ${path}`);
             return r.json();
@@ -132,13 +132,13 @@ jobs:
             const jan1=new Date(Date.UTC(year,0,1));
             const dec31=new Date(Date.UTC(year,11,31));
             const gridStart=new Date(jan1); gridStart.setUTCDate(gridStart.getUTCDate()-gridStart.getUTCDay());
-            const weeks=Math.ceil((dec31-gridStart)/(7*86400000))+1;
+            const weekCount=Math.ceil((dec31-gridStart)/(7*86400000))+1;
             const cell=11,gap=3,left=52,topY=48;
-            const w=Math.max(760,left+weeks*(cell+gap)+22),h=250;
+            const w=Math.max(760,left+weekCount*(cell+gap)+22),h=250;
             const dayMap=new Map(days.map(d=>[d.date,d.contributionCount]));
             let cells='',months='',weekdays='';
             let lastMonth=-1;
-            for(let week=0;week<weeks;week++){
+            for(let week=0;week<weekCount;week++){
               const base=new Date(gridStart); base.setUTCDate(base.getUTCDate()+week*7);
               if(base.getUTCMonth()!==lastMonth){
                 months+=`<text x="${left+week*(cell+gap)}" y="32" fill="#8b949e" font-family="Arial" font-size="10">${base.toLocaleString('en-US',{month:'short',timeZone:'UTC'})}</text>`;
