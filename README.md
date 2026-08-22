@@ -91,6 +91,26 @@ I'm a Computer Science student focused on **Java, Data Structures & Algorithms, 
 
 ---
 
+## 🧠 DSA Journey
+
+<div align="center">
+
+I regularly practice **Data Structures & Algorithms on LeetCode** and track my problem-solving journey there.
+
+<br/>
+
+<a href="https://leetcode.com/u/shivendra7083/">
+  <img src="https://img.shields.io/badge/See%20my%20DSA%20journey%20on%20LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="See my DSA journey on LeetCode" />
+</a>
+
+<br/><br/>
+
+<a href="https://leetcode.com/u/shivendra7083/">LeetCode Profile →</a>
+
+</div>
+
+---
+
 ## 🤝 Connect With Me
 
 <p align="center">
