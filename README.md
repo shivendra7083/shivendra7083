@@ -1,56 +1,289 @@
-<h1 align="center">Hi 👋, I'm Shivendra Singh</h1>
-<h3 align="center">A passionate aspiring Android developer from India.</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=shivendra7083&label=Profile%20views&color=0e75b6&style=flat" alt="shivendra7083" /> </p>
+# Hi 👋, I'm Shivendra Singh
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shivendra7083" alt="shivendra7083" /></a> </p>
+### Computer Science Student • Java & DSA • Android • Kotlin • Jetpack Compose
 
-<p align="left"> <a href="https://twitter.com/shivendra7083" target="blank"><img src="https://img.shields.io/twitter/follow/shivendra7083?logo=twitter&style=for-the-badge" alt="Shivendra's Twitter" /></a> </p>
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=20&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=Building+useful+software;Learning+Java+%26+Data+Structures;Android+%7C+Kotlin+%7C+Jetpack+Compose;Solving+problems+one+pattern+at+a+time" alt="Typing introduction" />
 
-<!-- - 🔭 I’m currently working on [Placemantra](https://github.com/shivendra7083/placemantra) -->
-
-- 🌱 I’m currently learning **JAVA**
-
-<!-- - 👯 I’m looking to collaborate on [Shoe Billing Software](https://github.com/shivendra7083/SHOE-SALES-MANAGEMENT-SOFTWARE) -->
-
-<!-- - 🤝 I’m looking for help with [Spotify Clone](https://github.com/shivendra7083/Spotify-Clone) -->
-
-- 👨‍💻 All of my projects are available at [https://github.com/shivendra7083](https://github.com/shivendra7083)
-
-<!-- - 📝 I regularly write articles on [https://github.com/shivendra7083/KernelHookers](https://github.com/shivendra7083/KernelHookers) -->
-
-- 💬 Ask me about **React, JS, Python GUIs**
-
-- 📫 How to reach me **shivendra7083@gmail.com**
-
-- 📄 Know about my experiences [https://www.linkedin.com/in/shivendra-singh-2ba447273/](https://www.linkedin.com/in/shivendra-singh-2ba447273/)
-
-<!-- - ⚡ Fun fact **I eat a lot while coding. 😂** -->
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<!-- <a href="https://codepen.io/shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="shivendra7083" height="30" width="40" /></a> -->
-<a href="https://x.com/Shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="geekydev_" height="30" width="40" /></a>
-<a href="https://www.linkedin.com/in/shivendra-singh-2ba447273" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="devendra-singh-08b613254" height="30" width="40" /></a>
-<!-- <a href="https://stackoverflow.com/users/20587126" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="20587126" height="30" width="40" /></a> -->
-<a href="https://instagram.com/shivendra2943" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="shivendra7083" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/shivendra7083" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="ds450974" height="30" width="40" /></a>
+<p>
+  <a href="https://github.com/shivendra7083"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/shivendra-singh-2ba447273/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/Shivendra7083"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://www.hackerrank.com/shivendra7083"><img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" /></a>
+  <a href="mailto:shivendra7083@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
-<h3 align="left">Languages and Tools :</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+<img src="https://komarev.com/ghpvc/?username=shivendra7083&style=flat-square&color=58A6FF&label=PROFILE+VIEWS" alt="Profile views" />
 
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/shivendra7083"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="shivendra7083" /></a></p><br><br>
-&nbsp;
+</div>
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=shivendra7083&show_icons=true&locale=en&layout=compact" alt="shivendra7083"/></p>
+---
 
-<p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shivendra7083&show_icons=true&locale=en" alt="shivendra7083" /></p>
+## 👨‍💻 About Me
 
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shivendra7083&" alt="shivendra7083" /></p>
+I'm a Computer Science student building a strong foundation in software development through **Java, Data Structures & Algorithms, Android development, Kotlin and Jetpack Compose**.
 
-<!---
-shivendra7083/shivendra7083 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I like turning ideas into working software and keeping my learning visible through projects and problem-solving repositories.
+
+- ☕ Strengthening Java for interviews and real projects
+- 🧠 Practicing DSA and common problem-solving patterns
+- 📱 Exploring modern Android development
+- 🎨 Learning Kotlin and Jetpack Compose
+- 🛠️ Building projects that solve practical problems
+- 📈 Improving consistency, code quality and engineering fundamentals
+
+> **Learn → Build → Solve → Review → Improve**
+
+---
+
+## 🚀 What I'm Working On
+
+| Focus | Current direction |
+|---|---|
+| 🧠 DSA | Arrays, hashing, two pointers, binary search and related patterns |
+| ☕ Java | Core Java + interview-oriented problem solving |
+| 📱 Android | Kotlin + modern Android development |
+| 🎨 Compose | Jetpack Compose / Compose Multiplatform |
+| 🛠️ Projects | Building and improving practical applications |
+| 💼 Career | Strengthening software engineering and placement fundamentals |
+
+---
+
+# 🧰 Tech Stack
+
+### Languages
+
+<p>
+<img src="https://skillicons.dev/icons?i=java,kotlin,python,javascript,html,css" alt="Java Kotlin Python JavaScript HTML CSS" />
+</p>
+
+### Android / Frontend / Backend
+
+<p>
+<img src="https://skillicons.dev/icons?i=androidstudio,android,kotlin,gradle,react,nodejs,django,bootstrap,tailwind" alt="Android Studio Android Kotlin Gradle React Node Django Bootstrap Tailwind" />
+</p>
+
+### Data / Databases / Tools
+
+<p>
+<img src="https://skillicons.dev/icons?i=mysql,mongodb,tensorflow,git,github,idea,vscode,figma" alt="MySQL MongoDB TensorFlow Git GitHub IntelliJ VS Code Figma" />
+</p>
+
+### DSA Patterns
+
+```text
+Arrays → Strings → Hashing → Two Pointers → Sliding Window
+                         ↓
+Binary Search → Linked List → Stack / Queue
+                         ↓
+Trees → Graphs → Recursion → Dynamic Programming
+```
+
+---
+
+# ⭐ Featured Projects
+
+## 🏛️ ExhibitPro — Exhibition Management System
+
+A digital-first exhibition management platform for organizers, exhibitors and visitors, with role-based portals and interactive stall management.
+
+**Stack:** Next.js 14 • Tailwind CSS • React Context API • localStorage
+
+**Highlights:**
+- Admin, exhibitor and visitor portals
+- Interactive stall allocation and tracking
+- Exhibition lifecycle management
+- Responsive dark/glassmorphism interface
+
+<a href="https://github.com/shivendra7083/PradarshiniEMS"><img src="https://img.shields.io/badge/View%20Project-181717?style=for-the-badge&logo=github" alt="ExhibitPro repository" /></a>
+
+---
+
+## 🎓 Placemantra — Open-Source Learning Platform
+
+An educational platform covering notes, sample papers, video lectures, quizzes, doubt support and interview preparation resources.
+
+**Stack:** HTML • CSS • JavaScript • Ruby • Sass • Bootstrap • Particle.js • Typed.js
+
+**Highlights:**
+- Learning and interview-preparation resources
+- Quiz and problem-solving sections
+- Student question / doubt flow
+- Productive open-source learning concept
+
+<a href="https://github.com/shivendra7083/Placemantra"><img src="https://img.shields.io/badge/View%20Project-181717?style=for-the-badge&logo=github" alt="Placemantra repository" /></a>
+
+---
+
+## 📊 Supermarket Sales Prediction
+
+A data-focused project exploring supermarket sales prediction and analytics.
+
+<a href="https://github.com/shivendra7083/Supermarket-Sales-Prediction"><img src="https://img.shields.io/badge/View%20Project-181717?style=for-the-badge&logo=github" alt="Supermarket Sales Prediction repository" /></a>
+
+---
+
+## 🎲 Dice Rolling Game — Compose Multiplatform
+
+A Kotlin Multiplatform project targeting **Android, iOS, Web and Desktop**, built around shared Compose code.
+
+<a href="https://github.com/shivendra7083/DiceRollingGame-JetpackCompose"><img src="https://img.shields.io/badge/View%20Project-181717?style=for-the-badge&logo=github" alt="Dice Rolling Game repository" /></a>
+
+---
+
+# 🧠 LeetCode & DSA
+
+My LeetCode work is tracked in a dedicated solutions repository created with LeetHub. The repository currently covers problems across arrays, hashing, two pointers, binary search, strings, dynamic programming, recursion, sorting, greedy techniques, bit manipulation and prefix sums. fileciteturn9file0L2-L5
+
+### 📚 DSA Practice Repository
+
+<a href="https://github.com/shivendra7083/Leetcode_DSA"><img src="https://img.shields.io/badge/LeetCode%20Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode solutions repository" /></a>
+
+### Current Topic Coverage
+
+```text
+Array / Hashing        ████████████████░░
+Two Pointers           ███████████████░░░
+Binary Search          ████████████░░░░░░
+Strings                █████████░░░░░░░░░
+Recursion / DP         ████████░░░░░░░░░░
+Sorting / Greedy       ████████░░░░░░░░░░
+Trees / Graphs         ░░░░░░░░░░░░░░░░░░
+```
+
+> These bars describe the breadth of topics represented in the repository, not fabricated completion percentages.
+
+---
+
+# 📊 GitHub Analytics
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=shivendra7083&show_icons=true&hide_border=true&theme=dark&include_all_commits=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=shivendra7083&show_icons=true&hide_border=true&theme=default&include_all_commits=true" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=shivendra7083&show_icons=true&hide_border=true&theme=default&include_all_commits=true" alt="GitHub statistics" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=shivendra7083&layout=compact&hide_border=true&theme=dark&langs_count=8" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=shivendra7083&layout=compact&hide_border=true&theme=default&langs_count=8" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivendra7083&layout=compact&hide_border=true&theme=default&langs_count=8" alt="Most used languages" />
+</picture>
+
+</div>
+
+---
+
+# 🔥 GitHub Streak
+
+<div align="center">
+<img src="https://streak-stats.demolab.com/?user=shivendra7083&theme=dark&hide_border=true" alt="GitHub contribution streak" />
+</div>
+
+---
+
+# 📈 GitHub Activity
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=shivendra7083&theme=tokyo-night&hide_border=true&area=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=shivendra7083&theme=github-compact&hide_border=true&area=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shivendra7083&theme=github-compact&hide_border=true&area=true" alt="GitHub activity graph" />
+</picture>
+</div>
+
+---
+
+# 🏆 GitHub Achievements
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=shivendra7083&theme=onedark&no-frame=true&margin-w=8&margin-h=8&row=1&column=6" alt="GitHub profile achievements" />
+</div>
+
+---
+
+# 🐍 Contribution Snake
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shivendra7083/shivendra7083/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shivendra7083/shivendra7083/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/shivendra7083/shivendra7083/output/github-contribution-grid-snake.svg" alt="Animated GitHub contribution snake" />
+</picture>
+</div>
+
+---
+
+# 📚 Currently Learning
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=java,kotlin,android,gradle,firebase,git,github" alt="Current learning technologies" />
+</p>
+
+```text
+Java
+ ↓
+Data Structures & Algorithms
+ ↓
+Android Development
+ ↓
+Kotlin
+ ↓
+Jetpack Compose / Compose Multiplatform
+ ↓
+Software Engineering
+```
+
+---
+
+# 🎯 Coding Philosophy
+
+```text
+                 BUILD
+                   │
+                   ▼
+               ENCOUNTER
+               A PROBLEM
+                   │
+                   ▼
+                 LEARN
+                   │
+                   ▼
+                 SOLVE
+                   │
+                   ▼
+                REVIEW
+                   │
+                   ▼
+                IMPROVE
+                   │
+                   └──────────────► BUILD
+```
+
+---
+
+# 🤝 Connect With Me
+
+<div align="center">
+
+<a href="https://github.com/shivendra7083"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://www.linkedin.com/in/shivendra-singh-2ba447273/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://x.com/Shivendra7083"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+<a href="https://www.hackerrank.com/shivendra7083"><img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" /></a>
+<a href="mailto:shivendra7083@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+
+</div>
+
+---
+
+<div align="center">
+
+Thanks for visiting my profile.
+
+**Let's build something useful. 🚀**
+
+<img src="https://komarev.com/ghpvc/?username=shivendra7083&style=flat-square&color=58A6FF&label=PROFILE+VIEWS" alt="Profile views" />
+
+</div>
