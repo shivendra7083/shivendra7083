@@ -124,7 +124,7 @@ jobs:
               <line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
               <text x="28" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Pull Request Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(reviews)}</text>
               <text x="210" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">${year} Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(currentYearContributions)}</text>
-              <text x="430" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Total Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(totalContributions)}</text>`;
+              <text x="430" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Lifetime Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">${fmt(totalContributions)}</text>`;
 
             fs.writeFileSync('assets/github-stats.svg', card(stats));
           })().catch(err => { console.error(err); process.exit(1); });

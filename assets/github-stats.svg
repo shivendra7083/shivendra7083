@@ -10,4 +10,5 @@
     <text x="550" y="96" fill="#8b949e" font-size="11">Issues</text><text x="550" y="122" fill="#f0f6fc" font-size="22" font-weight="700">0</text>
     </g><line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
     <text x="28" y="174" fill="#8b949e" font-family="Arial" font-size="11">PR Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">1</text>
-    <text x="210" y="174" fill="#8b949e" font-family="Arial" font-size="11">2026 Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">340</text></svg>
+    <text x="210" y="174" fill="#8b949e" font-family="Arial" font-size="11">2026 Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">340</text>
+    <text x="430" y="174" fill="#8b949e" font-family="Arial" font-size="11">Lifetime Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">340</text></svg>

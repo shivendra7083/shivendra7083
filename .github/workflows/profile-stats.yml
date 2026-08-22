@@ -112,7 +112,7 @@ jobs:
               </g><line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
               <text x="28" y="174" fill="#8b949e" font-family="Arial" font-size="11">PR Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(reviews)}</text>
               <text x="210" y="174" fill="#8b949e" font-family="Arial" font-size="11">${year} Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(streak.total)}</text>
-              <text x="430" y="174" fill="#8b949e" font-family="Arial" font-size="11">Total Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(totalContributions)}</text>`;
+              <text x="430" y="174" fill="#8b949e" font-family="Arial" font-size="11">Lifetime Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">${fmt(totalContributions)}</text>`;
 
             const streakCard=`
               <text x="28" y="35" fill="#ff7b72" font-family="Arial" font-size="19" font-weight="700">GitHub Contribution Streak</text>
