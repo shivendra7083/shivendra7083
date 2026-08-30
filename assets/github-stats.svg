@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220"><rect width="100%" height="100%" rx="14" fill="#0d1117"/><rect x="1" y="1" width="758" height="218" rx="13" fill="none" stroke="#30363d"/>
-    <text x="28" y="34" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">GitHub Statistics</text>
-    <text x="28" y="56" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">shivendra7083 • refreshed daily</text>
-    <g font-family="Arial,sans-serif">
-      <text x="28" y="96" fill="#8b949e" font-size="11">Repositories</text><text x="28" y="122" fill="#f0f6fc" font-size="22" font-weight="700">13</text>
-      <text x="150" y="96" fill="#8b949e" font-size="11">Followers</text><text x="150" y="122" fill="#f0f6fc" font-size="22" font-weight="700">4</text>
-      <text x="255" y="96" fill="#8b949e" font-size="11">Stars</text><text x="255" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
-      <text x="345" y="96" fill="#8b949e" font-size="11">Commits</text><text x="345" y="122" fill="#f0f6fc" font-size="22" font-weight="700">295</text>
-      <text x="455" y="96" fill="#8b949e" font-size="11">PRs</text><text x="455" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
-      <text x="550" y="96" fill="#8b949e" font-size="11">Issues</text><text x="550" y="122" fill="#f0f6fc" font-size="22" font-weight="700">0</text>
-    </g>
-    <line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
-    <text x="28" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Pull Request Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">1</text>
-    <text x="210" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">2026 Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">357</text>
-    <text x="430" y="174" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">Lifetime Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18" font-weight="700">794</text></svg>
+    <text x="28" y="34" fill="#58a6ff" font-family="Arial" font-size="19" font-weight="700">GitHub Statistics</text>
+    <text x="28" y="56" fill="#8b949e" font-family="Arial" font-size="12">shivendra7083 • refreshed daily</text>
+    <g font-family="Arial">
+    <text x="28" y="96" fill="#8b949e" font-size="11">Repositories</text><text x="28" y="122" fill="#f0f6fc" font-size="22" font-weight="700">13</text>
+    <text x="150" y="96" fill="#8b949e" font-size="11">Followers</text><text x="150" y="122" fill="#f0f6fc" font-size="22" font-weight="700">4</text>
+    <text x="255" y="96" fill="#8b949e" font-size="11">Stars</text><text x="255" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
+    <text x="345" y="96" fill="#8b949e" font-size="11">Commits</text><text x="345" y="122" fill="#f0f6fc" font-size="22" font-weight="700">295</text>
+    <text x="455" y="96" fill="#8b949e" font-size="11">PRs</text><text x="455" y="122" fill="#f0f6fc" font-size="22" font-weight="700">2</text>
+    <text x="550" y="96" fill="#8b949e" font-size="11">Issues</text><text x="550" y="122" fill="#f0f6fc" font-size="22" font-weight="700">0</text>
+    </g><line x1="28" y1="145" x2="732" y2="145" stroke="#30363d"/>
+    <text x="28" y="174" fill="#8b949e" font-family="Arial" font-size="11">PR Reviews</text><text x="28" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">1</text>
+    <text x="210" y="174" fill="#8b949e" font-family="Arial" font-size="11">2026 Contributions</text><text x="210" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">358</text>
+    <text x="430" y="174" fill="#8b949e" font-family="Arial" font-size="11">Lifetime Contributions</text><text x="430" y="196" fill="#58a6ff" font-family="Arial" font-size="18" font-weight="700">796</text></svg>
